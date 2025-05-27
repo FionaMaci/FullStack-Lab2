@@ -1,8 +1,6 @@
 import { flexRender } from "@tanstack/react-table";
 
 export function table_header(header){
-	// set header content
-	// set sort indicator
 	return <th key={header.id}>
                   {header.isPlaceholder
                     ? null

@@ -2,8 +2,7 @@ import { assignmentModel, projectModel, employeeModel } from "../db.js"
 
 async function insertNewAssignment(newAssignment){
 
-	// cheack that bothe the employee id and project code point to real
-	// documents
+	
 	const employee_id = newAssignment.employee_id
 	const employee = await employeeModel.findOne({employee_id: employee_id}).exec()
 	if (!employee) throw new Error("invalid employee_id")

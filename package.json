@@ -1,5 +1,5 @@
 {
-	"name": "Seminar2",
+	"name": "Lab2",
 	"workspaces": [
 		"server",
 		"client"

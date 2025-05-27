@@ -1,20 +1,19 @@
-// Add this if you are using CommonJS and not modules
 const fetch = (...args) => import('node-fetch').then(({ default: fetch }) => fetch(...args));
 
-const id = 102;
-const code = "011";
+const id = 103;
+const code = "200";
 const num = 4;
 
 const employee = {
   employee_id: id,
-  full_name: `fiona maci`,
+  full_name: `fiona1`,
   email: `fiona@email.com`,
   hashed_pwd: `pwd${num}`
 };
 
 const project = {
   project_code: code,
-  project_name: `${num} FM`,
+  project_name: `${num} MG`,
   project_discription: `A solution to all yor fashion problems `
 };
 
@@ -49,6 +48,6 @@ const assignments = {
     console.log("✅ Assignments:", data);
 
   } catch (err) {
-    console.error("❌ Error during fetch:", err);
+    console.error(" Error during fetch:", err);
   }
 })();
